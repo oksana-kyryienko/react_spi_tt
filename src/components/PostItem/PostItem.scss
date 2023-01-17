@@ -1,0 +1,77 @@
+@import '../../styles/main.scss';
+
+.post {
+  color: #363636;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+
+  &__img {
+    height: 215px;
+  }
+
+  &__content {
+    padding: 25px;
+  }
+
+  &__icon-calendar {
+    height: 13px;
+    width: 13px;
+    padding-right: 22px;
+    background: url(../../../public/images/calendar.png) no-repeat;
+  }
+
+  &__publish {
+    margin-bottom: 24px;
+    font-size: 0.87rem;
+    opacity: 0.6;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+  &__description {
+    min-height: 96px;
+    margin-bottom: 20px;
+    line-height: 150%;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1.5px;
+      bottom: -5px;
+      left: 0;
+      background-color: #363636;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+
+    &::before {
+      transition: width 0.5s;
+    }
+  }
+
+  &__icon-arrow {
+    margin-left: 6px;
+    height: 10px;
+    width: 12px;
+    background: url(../../../public/images/Arrow_Right.png) no-repeat;
+  }
+}

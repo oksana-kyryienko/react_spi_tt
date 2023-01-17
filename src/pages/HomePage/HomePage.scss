@@ -1,0 +1,12 @@
+@import '../../styles/main.scss';
+
+.home-page {
+  padding-top: 50px;
+  padding-bottom: 63px;
+  font-family: $ff-montserrat;
+  background-color: #fff;
+
+  &__filter {
+    margin-bottom: 45px;
+  }
+}
