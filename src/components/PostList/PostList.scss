@@ -1,6 +1,6 @@
 @import '../../styles/main.scss';
 
-.card-list {
+.post-list {
   display: grid;
   gap: 45px;
   grid-template-columns: repeat(auto-fill, minmax(340px, 400px));
