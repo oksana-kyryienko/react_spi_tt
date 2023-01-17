@@ -2,6 +2,7 @@
   "name": "react_spi_tt",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://oksana-kyryienko.github.io/react_spi_tt/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +15,7 @@
     "eslint-config-standard-with-typescript": "^27.0.1",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "gh-pages": "^4.0.0",
     "mark.js": "^8.11.1",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
@@ -33,7 +35,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint-ts": "eslint --ext .ts,.tsx ./src/"
+    "lint-ts": "eslint --ext .ts,.tsx ./src/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
